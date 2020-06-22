@@ -5,6 +5,11 @@
   "repository": "https://github.com/goncadanilo/desafio-fale-mais.git",
   "author": "Danilo Gonçalves <gonca.danilo@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest --passWithNoTests --silent --noStackTrace",
+    "test:cov": "yarn test --coverage",
+    "test:staged": "yarn test --findRelatedTests"
+  },
   "devDependencies": {
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",
@@ -22,6 +27,7 @@
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "ts-jest": "^26.1.1",
+    "tsconfig-paths": "^3.9.0",
     "typescript": "^3.9.5"
   }
 }
