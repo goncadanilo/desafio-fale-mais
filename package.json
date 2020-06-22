@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/goncadanilo/desafio-fale-mais.git",
   "author": "Danilo Gonçalves <gonca.danilo@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.9.5"
+  }
 }
