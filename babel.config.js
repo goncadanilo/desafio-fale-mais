@@ -12,7 +12,9 @@ module.exports = {
   ],
   plugins: [
     ['module-resolver', {
-      alias: {}
+      alias: {
+        '@services': './src/services'
+      }
     }]
   ],
   ignore: [
