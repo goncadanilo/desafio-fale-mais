@@ -1,4 +1,5 @@
 import CalculateCallCostService from '../../src/services/CalculateCallCostService';
+import AppError from '../../src/errors/AppError';
 import FakeTariffsRepository from '../fakes/repositories/FakeTariffsRepository';
 
 const makeCalculateCallCostService = () => {
@@ -57,5 +58,22 @@ describe('Calculate Call Cost Service', () => {
         plan: 120,
       }),
     ).toStrictEqual([167.2, 380]);
+  });
+
+  it('should return an AppError when the tariff is not found', async () => {
+    const { calculateCallCostService } = makeCalculateCallCostService();
+
+    try {
+      await calculateCallCostService.execute({
+        origin: 0,
+        destiny: 0,
+        time: 0,
+        plan: 0,
+      });
+    } catch (error) {
+      expect(error).toBeInstanceOf(AppError);
+      expect(error.statusCode).toBe(400);
+      expect(error.message).toBe('Tariff is not found');
+    }
   });
 });
