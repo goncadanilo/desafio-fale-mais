@@ -21,7 +21,7 @@
     "paths": {
       "@errors/*": ["./src/errors/*"],
       "@interfaces/*": ["./src/interfaces/*"],
-      "@repositories/*": ["src/interfaces/*"],
+      "@repositories/*": ["src/repositories/*"],
       "@schemas/*": ["./src/schemas/*"],
       "@services/*": ["./src/services/*"]
     }

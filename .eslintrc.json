@@ -27,6 +27,7 @@
     "no-console": "off",
     "no-useless-constructor": "off",
     "no-underscore-dangle": "off",
+    "import/no-extraneous-dependencies": "off",
     "prettier/prettier": "error",
     "class-methods-use-this": "off",
     "@typescript-eslint/no-unused-vars": ["error", {
