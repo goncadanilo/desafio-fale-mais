@@ -19,6 +19,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
+      "@errors/*": ["./src/errors/*"],
       "@interfaces/*": ["./src/interfaces/*"],
       "@repositories/*": ["src/interfaces/*"],
       "@schemas/*": ["./src/schemas/*"],
