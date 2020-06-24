@@ -1,12 +1,12 @@
 import { Schema, model, Document } from 'mongoose';
 
-type Prices = Document & {
+type Tariffs = Document & {
   origin: number;
   destiny: number;
-  price: number;
+  tariff: number;
 };
 
-const PricesSchema = new Schema({
+const TariffsSchema = new Schema({
   origin: {
     type: Number,
     required: true,
@@ -15,10 +15,10 @@ const PricesSchema = new Schema({
     type: Number,
     required: true,
   },
-  price: {
+  tariff: {
     type: Number,
     required: true,
   },
 });
 
-export default model<Prices>('Prices', PricesSchema);
+export default model<Tariffs>('Tariffs', TariffsSchema);
