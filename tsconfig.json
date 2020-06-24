@@ -19,7 +19,8 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@repositories/*": ["./src/repositories/*"],
+      "@interfaces/*": ["./src/interfaces/*"],
+      "@repositories/*": ["src/interfaces/*"],
       "@schemas/*": ["./src/schemas/*"],
       "@services/*": ["./src/services/*"]
     }
