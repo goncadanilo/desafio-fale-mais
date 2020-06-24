@@ -19,10 +19,9 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@controllers/*": ["./src/controllers"],
-      "@repositories/*": ["./src/repositories"],
-      "@schemas/*": ["./src/schemas"],
-      "@services/*": ["./src/services"]
+      "@repositories/*": ["./src/repositories/*"],
+      "@schemas/*": ["./src/schemas/*"],
+      "@services/*": ["./src/services/*"]
     }
   },
   "include": [
