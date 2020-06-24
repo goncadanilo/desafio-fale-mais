@@ -1,4 +1,5 @@
 import ITariffsRepository from '@interfaces/ITariffsRepository';
+import AppError from '@errors/AppError';
 
 interface Data {
   origin: number;
@@ -13,6 +14,10 @@ export default class CalculateCallCostService {
   public async execute(data: Data): Promise<[number, number]> {
     const { origin, destiny, time, plan } = data;
     const tariff = await this.tariffsRepository.getCallTariff(origin, destiny);
+
+    if (!tariff) {
+      throw new AppError('Tariff is not found');
+    }
 
     const withoutPlan = time * tariff;
     const withPlan =
