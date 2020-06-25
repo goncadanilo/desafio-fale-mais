@@ -6,9 +6,10 @@ export default class TariffsRepository implements ITariffsRepository {
     origin: number,
     destiny: number,
   ): Promise<number | undefined> {
-    const { tariff } = await TariffsSchema.findOne({
+    const findTariff = await TariffsSchema.findOne({
       $and: [{ origin }, { destiny }],
     });
+    const tariff = findTariff?.tariff;
 
     return tariff;
   }

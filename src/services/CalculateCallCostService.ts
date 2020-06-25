@@ -16,7 +16,7 @@ export default class CalculateCallCostService {
     const tariff = await this.tariffsRepository.getCallTariff(origin, destiny);
 
     if (!tariff) {
-      throw new AppError('Tariff is not found');
+      throw new AppError('Tariff value is not found');
     }
 
     const withoutPlan = time * tariff;
