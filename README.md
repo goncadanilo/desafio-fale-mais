@@ -43,15 +43,15 @@ NoSql, o MongoDB, para armazenar as tarifas de cada ligação.
 
 O serviço recebe, atravez de uma requisição HTTP(GET) as seguintes informações: 
 
-- origin: cádigo DDD do número que está realizando a chamada
-- destiny: cádigo DDD do número que está recebendo a chamada
-- time: o tempo total da chamada
-- plan: o plano que o cliente deseja calcular
+- **origin**: cádigo DDD do número que está realizando a chamada
+- **destiny**: cádigo DDD do número que está recebendo a chamada
+- **time**: o tempo total da chamada
+- **plan**: o plano que o cliente deseja calcular
 
 Depois calcula o custo da chamada e retorna seguintes resultados:
 
-- withPlan: o custo da chamada utilizando o plano escolhido
-- withoutPlan: o custo da chamada sem utilizar nenhum dos planos disponíveis
+- **withPlan**: o custo da chamada utilizando o plano escolhido
+- **withoutPlan**: o custo da chamada sem utilizar nenhum dos planos disponíveis
 
 ## :arrow_forward: Como rodar
 
