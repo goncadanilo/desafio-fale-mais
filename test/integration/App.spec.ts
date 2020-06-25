@@ -20,4 +20,16 @@ describe('App', () => {
     expect(response.body.withPlan).toBe(0);
     expect(response.body.withoutPlan).toBe(38);
   });
+
+  it('should return 400 if tariff value is not found', async () => {
+    const response = await request(app).get('/v1/calculate').query({
+      origin: '0',
+      destiny: '0',
+      time: '0',
+      plan: '0',
+    });
+
+    expect(response.status).toBe(400);
+    expect(response.body.message).toBe('Tariff value is not found');
+  });
 });

@@ -60,7 +60,7 @@ describe('Calculate Call Cost Service', () => {
     ).toStrictEqual([167.2, 380]);
   });
 
-  it('should return an AppError when the tariff is not found', async () => {
+  it('should return an AppError when the tariff value is not found', async () => {
     const { calculateCallCostService } = makeCalculateCallCostService();
 
     try {
@@ -73,7 +73,7 @@ describe('Calculate Call Cost Service', () => {
     } catch (error) {
       expect(error).toBeInstanceOf(AppError);
       expect(error.statusCode).toBe(400);
-      expect(error.message).toBe('Tariff is not found');
+      expect(error.message).toBe('Tariff value is not found');
     }
   });
 });

@@ -20,10 +20,11 @@ export default class FakeTariffsRepository implements ITariffsRepository {
     origin: number,
     destiny: number,
   ): Promise<number | undefined> {
-    const object = this.tariffs.find(
+    const findTariff = this.tariffs.find(
       key => key.origin === origin && key.destiny === destiny,
     );
+    const tariff = findTariff?.tariff;
 
-    return object ? object.tariff : undefined;
+    return tariff;
   }
 }
