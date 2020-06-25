@@ -6,17 +6,13 @@
   👨‍💻 Challenge
 </h4>
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/goncadanilo/desafio-fale-mais.svg">
-
-  <a href="https://github.com/goncadanilo/desafio-fale-mais/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/goncadanilo/desafio-fale-mais.svg">
-  </a>
-
-  <a href="https://github.com/goncadanilo/desafio-fale-mais/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/goncadanilo/desafio-fale-mais.svg">
-  </a>
+  <img alt="Languages" src="https://img.shields.io/badge/languages-2-blue">
+  
+  <img alt="Coverage" src="https://img.shields.io/badge/coverage-100%25-brightgreen">
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+  
+  <img alt="Author" src="https://img.shields.io/badge/author-Danilo%20Gon%C3%A7alves-blue">
 </p>
 
 <p align="center">
