@@ -23,7 +23,7 @@
 <br>
 
 <p align="center">
-  <img alt="Desafio Fale Mais" src=".github/banner.png" width="80%">
+  <img alt="Desafio Fale Mais" src=".github/banner.png" width="85%">
 </p>
 
 ## :rocket: Tecnologias
