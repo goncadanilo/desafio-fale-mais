@@ -13,10 +13,10 @@
 </p>
 
 <p align="center">
-  <a href="#-layout-do-front-end">Layout do Front End</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-descrição">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#arrow_forward-como-rodar">Como rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout-do-front-end">Layout do Front End</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -24,7 +24,7 @@
 
 <p align="center">
   <img alt="Desafio Fale Mais" src=".github/banner.png" width="80%">
-</p>
+</p> width="70%"
 
 ## :rocket: Tecnologias
 
@@ -61,9 +61,9 @@ Caso ocorra um erro, será retornado uma mensagem do erro.
 ## 🖼️ Layout do Front End
 
 <p align="center">
-  <img alt="Form" src=".github/form.png" width="70%">
+  <img alt="Form" src=".github/form.png">
   <br>
-  <img alt="Modal" src=".github/modal.png" width="70%">
+  <img alt="Modal" src=".github/modal.png">
 </p>
 
 ## :memo: Licença
