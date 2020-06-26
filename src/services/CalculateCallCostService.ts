@@ -21,12 +21,8 @@ export default class CalculateCallCostService {
 
     const withoutPlan = time * tariff;
     const withPlan =
-      plan >= time ? 0 : this.calculateIncrease(time, plan, tariff);
+      plan >= time ? 0 : (time - plan) * tariff + (time - plan) * tariff * 0.1;
 
     return [withPlan, withoutPlan];
-  }
-
-  private calculateIncrease(time: number, plan: number, tariff: number) {
-    return (time - plan) * tariff + (time - plan) * tariff * 0.1;
   }
 }
