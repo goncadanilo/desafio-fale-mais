@@ -13,9 +13,10 @@
 </p>
 
 <p align="center">
-  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout-do-front-end">Layout do Front End</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-descrição">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#arrow_forward-como-rodar">Como rodar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -53,7 +54,17 @@ Depois calcula o custo da chamada e retorna seguintes resultados:
 - **withPlan**: o custo da chamada utilizando o plano escolhido
 - **withoutPlan**: o custo da chamada sem utilizar nenhum dos planos disponíveis
 
+Caso ocorra um erro, será retornado uma mensagem do erro.
+
 ## :arrow_forward: Como rodar
+
+## 🖼️ Layout do Front End
+
+<p align="center">
+  <img alt="Form" src=".github/form.png" width="70%">
+  <br>
+  <img alt="Modal" src=".github/modal.png" width="70%">
+</p>
 
 ## :memo: Licença
 
