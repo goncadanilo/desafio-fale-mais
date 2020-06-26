@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Mais</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-form">
+        <h1>FaleMais</h1>
+
+        <div class="field">
+          <label for="origin">DDD da origem</label>
+          <select name="origin" id="origin">
+            <option value="">Escolha um DDD</option>
+            <option value="011">011</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="destiny">DDD do destino</label>
+          <select name="destiny" id="destiny">
+            <option value="">Escolha um DDD</option>
+            <option value="011">011</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="time">Tempo da chamada (min)</label>
+          <input type="number" name="time" id="time" min="0" value="0">
+        </div>
+
+        <div class="field">
+          <label for="plan">Plano FaleMais</label>
+          <select name="plan" id="plan">
+            <option value="">Escolha um Plano</option>
+            <option value="30">FaleMais 30</option>
+            <option value="60">FaleMais 60</option>
+            <option value="120">FaleMais 120</option>
+          </select>
+        </div>
+
+        <button type="button" id="button" >Calcular</button>
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h3>Resultado</h3>
+        <div class="result-card">
+          <div class="result">
+            <p>Com o plano</p>
+            <span id="withPlan">-</span>
+          </div>
+          <div class="result">
+            <p>Sem o plano</p>
+            <span id="withoutPlan">-</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./services/calculateCallCost.js"></script>
+  </body>
+</html>

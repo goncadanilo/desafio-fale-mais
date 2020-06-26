@@ -3,6 +3,7 @@ import 'express-async-errors';
 import express, { Application, Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
+import { resolve } from 'path';
 
 import AppError from '@errors/AppError';
 import routes from './routes';
@@ -37,6 +38,7 @@ class App {
 
   private routes() {
     this.app.use('/v1', routes);
+    this.app.use('/client', express.static(resolve(__dirname, '..', 'client')));
   }
 
   private errors() {
