@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img alt="Languages" src="https://img.shields.io/badge/languages-2-blue">
+  <img alt="Languages" src="https://img.shields.io/badge/languages-4-blue">
   
   <img alt="Coverage" src="https://img.shields.io/badge/coverage-100%25-brightgreen">
 
