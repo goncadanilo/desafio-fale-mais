@@ -24,8 +24,11 @@ function handleCalculate() {
 
 function openModal(data) {
   if(!data.message) {
-    document.getElementById('withPlan').innerHTML = `R$ ${data.withPlan}`;
-    document.getElementById('withoutPlan').innerHTML = `R$ ${data.withoutPlan}`;
+    const withPlan = data.withPlan.toFixed(2).replace('.', ',');
+    const withoutPlan = data.withoutPlan.toFixed(2).replace('.', ',');
+
+    document.getElementById('withPlan').innerHTML = `R$ ${withPlan}`;
+    document.getElementById('withoutPlan').innerHTML = `R$ ${withoutPlan}`;
   } else {
     document.getElementById('withPlan').innerHTML = '-';
     document.getElementById('withoutPlan').innerHTML = '-';
