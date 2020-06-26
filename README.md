@@ -58,6 +58,20 @@ Caso ocorra um erro, será retornado uma mensagem do erro.
 
 ## :arrow_forward: Como rodar
 
+#### Localmente
+
+...
+
+#### Com Docker
+
+...
+
+#### Como rodar os testes
+
+- Para rodar os testes basta usar o comando `yarn test` ou `npm run test`.
+- Para rodar os testes com coverage, use o comando `yarn test:cov` ou `npm run test:cov`.
+
+
 ## :art: Layout
 
 <p align="center">
