@@ -13,6 +13,12 @@ function handleCalculate() {
   const time = document.getElementById('time').value;
   const plan = document.getElementById('plan').value;
 
+  if(origin === "" || destiny === "" || time === "0" || time === "" || plan === "") {
+    alert('Preencha todos os campos!');
+
+    return;
+  }
+
   fetch('http://localhost:3333/api/v1/calculate?' + new URLSearchParams({
     origin,
     destiny,
