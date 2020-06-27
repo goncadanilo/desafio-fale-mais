@@ -49,7 +49,7 @@ O serviço recebe, através de uma requisição HTTP(GET) as seguintes informaç
 - **time**: o tempo total da chamada
 - **plan**: o plano que o cliente deseja calcular
 
-Depois calcula o custo da chamada e retorna seguintes resultados:
+Depois calcula o custo da chamada e retorna:
 
 - **withPlan**: o custo da chamada utilizando o plano escolhido
 - **withoutPlan**: o custo da chamada sem utilizar nenhum dos planos disponíveis
@@ -61,7 +61,7 @@ A aplicação está disponível no endereço: **https://falemais-danilo.herokuap
 
 ## :arrow_forward: Como rodar
 
-Antes de tudo, instale as dependências do projeco com o seguinte comando `yarn` ou `npm install`.
+Antes de tudo, instale as dependências do projeto com o seguinte comando `yarn` ou `npm install`.
 
 Obs: para rodar localmente, troque o valor do **baseUrl** na linha 5 do arquivo [calculateCallCost.js](https://github.com/goncadanilo/desafio-fale-mais/blob/master/client/services/calculateCallCost.js) para `http://localhost:3333`.
 
