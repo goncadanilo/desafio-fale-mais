@@ -37,7 +37,7 @@ class App {
   }
 
   private routes() {
-    this.app.use('/v1', routes);
+    this.app.use('/api/v1', routes);
     this.app.use('/client', express.static(resolve(__dirname, '..', 'client')));
   }
 

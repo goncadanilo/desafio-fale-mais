@@ -10,7 +10,7 @@ function handleCalculate() {
   const time = document.getElementById('time').value;
   const plan = document.getElementById('plan').value;
 
-  fetch('http://localhost:3333/v1/calculate?' + new URLSearchParams({
+  fetch('http://localhost:3333/api/v1/calculate?' + new URLSearchParams({
     origin,
     destiny,
     time,

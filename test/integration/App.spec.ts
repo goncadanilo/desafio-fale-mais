@@ -9,7 +9,7 @@ describe('App', () => {
   });
 
   it('should be able to calculate the call cost', async () => {
-    const response = await request(app).get('/v1/calculate').query({
+    const response = await request(app).get('/api/v1/calculate').query({
       origin: '011',
       destiny: '016',
       time: '20',
@@ -22,7 +22,7 @@ describe('App', () => {
   });
 
   it('should return 400 if tariff value is not found', async () => {
-    const response = await request(app).get('/v1/calculate').query({
+    const response = await request(app).get('/api/v1/calculate').query({
       origin: '0',
       destiny: '0',
       time: '0',
