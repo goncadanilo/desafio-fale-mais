@@ -42,7 +42,7 @@ Esse projeto é um serviço que calcula o custo de algumas chamadas baseando-se 
 tarifas fixas. Esse serviço foi desenvolvido com Typescript e Node.js, também foi usado um banco 
 NoSql, o MongoDB, para armazenar as tarifas de cada ligação.
 
-O serviço recebe, atravez de uma requisição HTTP(GET) as seguintes informações: 
+O serviço recebe, através de uma requisição HTTP(GET) as seguintes informações: 
 
 - **origin**: cádigo DDD do número que está realizando a chamada
 - **destiny**: cádigo DDD do número que está recebendo a chamada
