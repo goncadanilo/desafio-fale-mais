@@ -23,9 +23,9 @@ describe('App', () => {
 
   it('should return 400 if tariff value is not found', async () => {
     const response = await request(app).get('/api/v1/calculate').query({
-      origin: '0',
-      destiny: '0',
-      time: '0',
+      origin: '000',
+      destiny: '000',
+      time: '00',
       plan: '0',
     });
 

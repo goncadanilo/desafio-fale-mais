@@ -19,6 +19,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
+      "@controllers/*": ["./src/controllers/*"],
       "@errors/*": ["./src/errors/*"],
       "@interfaces/*": ["./src/interfaces/*"],
       "@repositories/*": ["src/repositories/*"],

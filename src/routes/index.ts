@@ -1,23 +1,22 @@
-import { Router, Request, Response } from 'express';
-import TariffsRepository from '@repositories/TariffsRepository';
-import CalculateCallCostService from '@services/CalculateCallCostService';
+import { Router } from 'express';
+import { celebrate, Segments, Joi } from 'celebrate';
+
+import CalculatorController from '@controllers/CalculatorController';
 
 const routes = Router();
-const tariffsRepository = new TariffsRepository();
-const calculateCallCostService = new CalculateCallCostService(
-  tariffsRepository,
+const calculatorController = new CalculatorController();
+
+routes.get(
+  '/calculate',
+  celebrate({
+    [Segments.QUERY]: {
+      origin: Joi.string().length(3).required(),
+      destiny: Joi.string().length(3).required(),
+      time: Joi.string().required(),
+      plan: Joi.string().required(),
+    },
+  }),
+  calculatorController.calculate,
 );
-
-routes.get('/calculate', async (request: Request, response: Response) => {
-  const { origin, destiny, time, plan } = request.query;
-  const [withPlan, withoutPlan] = await calculateCallCostService.execute({
-    origin: Number(origin),
-    destiny: Number(destiny),
-    time: Number(time),
-    plan: Number(plan),
-  });
-
-  return response.status(200).json({ withPlan, withoutPlan });
-});
 
 export default routes;

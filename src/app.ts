@@ -3,6 +3,7 @@ import 'express-async-errors';
 import express, { Application, Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
+import { errors } from 'celebrate';
 import { resolve } from 'path';
 
 import AppError from '@errors/AppError';
@@ -42,6 +43,7 @@ class App {
   }
 
   private errors() {
+    this.app.use(errors());
     this.app.use((err: Error, req: Request, res: Response, _: NextFunction) => {
       if (err instanceof AppError) {
         return res.status(err.statusCode).json({ message: err.message });
