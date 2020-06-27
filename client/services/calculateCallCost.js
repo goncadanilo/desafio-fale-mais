@@ -5,6 +5,9 @@ button.onclick = () => handleCalculate();
 modal.onclick = () => closeModal();
 
 function handleCalculate() {
+  button.innerHTML = 'Calculando...';
+  button.style.cursor = 'not-allowed';
+
   const origin = document.getElementById('origin').value;
   const destiny = document.getElementById('destiny').value;
   const time = document.getElementById('time').value;
@@ -33,6 +36,9 @@ function openModal(data) {
     document.getElementById('withPlan').innerHTML = '-';
     document.getElementById('withoutPlan').innerHTML = '-';
   }
+
+  button.innerHTML = 'Calcular';
+  button.style.cursor = 'pointer';
 
   modal.style.display = 'block';
 }

@@ -75,7 +75,7 @@ body, html {
 }
 
 .container .card-form #button:hover {
-  opacity: 0.9;
+  background-color: #174480;
 }
 
 .modal {
