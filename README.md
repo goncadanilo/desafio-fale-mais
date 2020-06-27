@@ -65,19 +65,15 @@ Antes de tudo, instale as dependências do projeco com o seguinte comando `yarn`
 - Para dar build na aplicação, use o comando `yarn build` ou `npm run build`.
 - Para rodar a aplicação use o comando `yarn start` ou `npm run start`.
 - Para rodar a aplicação em modo watch, use o comando `yarn start:dev` ou `npm run start:dev`.
-
-Se tudo ocorrer bem a aplicação vai estar disponível no endereço: **http://localhost:3333/api/v1**.
-
-O front end da aplicação vai estar disponível em: **http://localhost:3333/client**.
+- Se tudo ocorrer bem a aplicação vai estar disponível no endereço: **http://localhost:3333/api/v1**.
+- O front end da aplicação vai estar disponível em: **http://localhost:3333/client**.
 
 #### Localmente com Docker
 
 - Para subir o container da aplicação, use o comando `yarn up` ou `npm run up`.
 - Para desfazer o container, use o comando `yarn down` ou `npm run down`.
-
-Se tudo ocorrer bem a aplicação vai estar disponível no endereço: **http://localhost:3333/api/v1**.
-
-O front end da aplicação vai estar disponível em: **http://localhost:3333/client**.
+- Se tudo ocorrer bem a aplicação vai estar disponível no endereço: **http://localhost:3333/api/v1**.
+- O front end da aplicação vai estar disponível em: **http://localhost:3333/client**.
 
 #### Como rodar os testes
 
