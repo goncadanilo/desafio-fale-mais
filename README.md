@@ -58,11 +58,11 @@ Caso ocorra um erro, será retornado uma mensagem do erro.
 
 ## :arrow_forward: Como rodar
 
-#### Localmente
+#### Localmente com Node.js
 
 ...
 
-#### Com Docker
+#### Localmente com Docker
 
 ...
 
