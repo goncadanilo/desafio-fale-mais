@@ -56,6 +56,9 @@ Depois calcula o custo da chamada e retorna seguintes resultados:
 
 Caso ocorra um erro, será retornado uma mensagem do erro.
 
+A aplicação foi hospedada no [Heroku](https://www.heroku.com/), e foi utilizado o github actions para CI.
+A aplicação está disponível no endereço: **https://falemais-danilo.herokuapp.com/client/**.
+
 ## :arrow_forward: Como rodar
 
 Antes de tudo, instale as dependências do projeco com o seguinte comando `yarn` ou `npm install`.
