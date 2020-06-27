@@ -63,6 +63,8 @@ A aplicação está disponível no endereço: **https://falemais-danilo.herokuap
 
 Antes de tudo, instale as dependências do projeco com o seguinte comando `yarn` ou `npm install`.
 
+Obs: para rodar localmente, troque o valor do **baseUrl** na linha 5 do arquivo [calculateCallCost.js](https://github.com/goncadanilo/desafio-fale-mais/blob/master/client/services/calculateCallCost.js) para `http://localhost:3333`.
+
 #### Localmente com Node.js
 
 - Para dar build na aplicação, use o comando `yarn build` ou `npm run build`.
