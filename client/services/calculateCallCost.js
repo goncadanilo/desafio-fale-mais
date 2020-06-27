@@ -1,9 +1,8 @@
 const modal = document.getElementById('modal');
 const button = document.getElementById('button');
 
-const BASE_URL = process.env.NODE_ENV === 'production'
-  ? 'https://falemais-danilo.herokuapp.com/'
-  : 'http://localhost:3333';
+// const baseUrl = 'http://localhost:3333' <- use quando for rodar localmente;
+const baseUrl = 'https://falemais-danilo.herokuapp.com';
 
 button.onclick = () => handleCalculate();
 modal.onclick = () => closeModal();
@@ -20,10 +19,13 @@ function handleCalculate() {
   if(origin === "" || destiny === "" || time === "0" || time === "" || plan === "") {
     alert('Preencha todos os campos!');
 
+    button.innerHTML = 'Calcular';
+    button.style.cursor = 'pointer';
+
     return;
   }
 
-  fetch(`${BASE_URL}/api/v1/calculate?` + new URLSearchParams({
+  fetch(`${baseUrl}/api/v1/calculate?` + new URLSearchParams({
     origin,
     destiny,
     time,
