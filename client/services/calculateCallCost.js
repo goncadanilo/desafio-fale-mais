@@ -1,6 +1,10 @@
 const modal = document.getElementById('modal');
 const button = document.getElementById('button');
 
+const BASE_URL = process.env.NODE_ENV === 'production'
+  ? 'https://falemais-danilo.herokuapp.com/'
+  : 'http://localhost:3333';
+
 button.onclick = () => handleCalculate();
 modal.onclick = () => closeModal();
 
@@ -19,7 +23,7 @@ function handleCalculate() {
     return;
   }
 
-  fetch('http://localhost:3333/api/v1/calculate?' + new URLSearchParams({
+  fetch(`${BASE_URL}/api/v1/calculate?` + new URLSearchParams({
     origin,
     destiny,
     time,
